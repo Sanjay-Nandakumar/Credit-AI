@@ -1,0 +1,161 @@
+2020-08-13 21:53:02,244 : INFO : Start of Prediction
+2020-08-13 21:53:02,245 : INFO : run_id:2020-08-13_215302_538382869
+2020-08-13 21:53:02,245 : INFO : Start of Data Load, validation and transformation
+2020-08-13 21:53:02,245 : INFO : Start of Archiving Old Rejected Files...
+2020-08-13 21:53:02,245 : INFO : End of Archiving Old Rejected Files...
+2020-08-13 21:53:02,245 : INFO : Start of Archiving Old Validated Files...
+2020-08-13 21:53:02,247 : INFO : End of Archiving Old Validated Files...
+2020-08-13 21:53:02,248 : INFO : Start of Archiving Old Processed Files...
+2020-08-13 21:53:02,248 : INFO : End of Archiving Old Processed Files...
+2020-08-13 21:53:02,248 : INFO : Start of Archiving Old Result Files...
+2020-08-13 21:53:02,249 : INFO : End of Archiving Old Result Files...
+2020-08-13 21:53:02,249 : INFO : Start of Reading values From Schema...
+2020-08-13 21:53:02,250 : INFO : End of Reading values From Schema...
+2020-08-13 21:53:02,250 : INFO : Start of Validating Column Length...
+2020-08-13 21:53:02,250 : INFO : End of Validating Column Length...
+2020-08-13 21:53:02,250 : INFO : Start of Validating Missing Values...
+2020-08-13 21:53:02,251 : INFO : End of Validating Missing Values...
+2020-08-13 21:53:02,251 : INFO : Start of Replacing Missing Values with NULL...
+2020-08-13 21:53:02,251 : INFO : End of Replacing Missing Values with NULL...
+2020-08-13 21:53:02,251 : INFO : Start of Creating Table...
+2020-08-13 21:53:02,252 : INFO : Opened prediction database successfully
+2020-08-13 21:53:02,537 : INFO : CREATE TABLE prediction_raw_data_t column_name
+2020-08-13 21:53:02,669 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:02,814 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:02,919 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,045 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,151 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,243 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,358 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,521 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,685 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:03,900 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:04,048 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:04,142 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:04,248 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:04,353 : INFO : ALTER TABLE prediction_raw_data_t ADD COLUMN
+2020-08-13 21:53:04,354 : INFO : End of Creating Table...
+2020-08-13 21:53:04,355 : INFO : Opened prediction database successfully
+2020-08-13 21:53:04,356 : INFO : Start of Inserting Data into Table...
+2020-08-13 21:53:04,356 : INFO : End of Inserting Data into Table...
+2020-08-13 21:53:04,356 : INFO : Start of Exporting Data into CSV...
+2020-08-13 21:53:04,356 : INFO : Opened prediction database successfully
+2020-08-13 21:53:04,358 : INFO : End of Exporting Data into CSV...
+2020-08-13 21:53:04,358 : INFO : Start of Moving Processed Files...
+2020-08-13 21:53:04,358 : INFO : End of Moving Processed Files...
+2020-08-13 21:53:04,358 : INFO : End of Data Load, validation and transformation
+2020-08-13 21:53:04,359 : INFO : Start of Preprocessing...
+2020-08-13 21:53:04,359 : INFO : Start of reading dataset...
+2020-08-13 21:53:04,372 : INFO : End of reading dataset...
+2020-08-13 21:53:04,372 : INFO : Start of Droping Columns...
+2020-08-13 21:53:04,373 : INFO : End of Droping Columns...
+2020-08-13 21:53:04,373 : INFO : Start of replacing invalid values...
+2020-08-13 21:53:04,387 : INFO : end of replacing invalid values...
+2020-08-13 21:53:04,387 : INFO : Start of encode Categorical Values ...
+2020-08-13 21:53:04,395 : INFO : end of encode Categorical Values...
+2020-08-13 21:53:04,395 : INFO : Start of feature encoding...
+2020-08-13 21:53:04,445 : INFO : End of feature encoding...
+2020-08-13 21:53:04,446 : INFO : Start of Droping Columns...
+2020-08-13 21:53:04,448 : INFO : End of Droping Columns...
+2020-08-13 21:53:04,448 : INFO : Start of finding missing values...
+2020-08-13 21:53:04,450 : INFO : End of finding missing values...
+2020-08-13 21:53:04,450 : INFO : Start feature selection of dataset...
+2020-08-13 21:53:04,451 : ERROR : Exception raised while feature selection of dataset: %s'Approved'
+Traceback (most recent call last):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Approved'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 236, in feature_selection
+    y = self.data['Approved']
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\frame.py", line 2995, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Approved'
+2020-08-13 21:53:04,457 : ERROR : Unsuccessful End of Preprocessing...
+Traceback (most recent call last):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Approved'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 236, in feature_selection
+    y = self.data['Approved']
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\frame.py", line 2995, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Approved'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 376, in preprocess_predictset
+    data1 = self.feature_selection(data)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 254, in feature_selection
+    raise Exception()
+Exception
+2020-08-13 21:53:04,459 : ERROR : Unsuccessful End of Prediction
+Traceback (most recent call last):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Approved'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 236, in feature_selection
+    y = self.data['Approved']
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\frame.py", line 2995, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Approved'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 376, in preprocess_predictset
+    data1 = self.feature_selection(data)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 254, in feature_selection
+    raise Exception()
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\prediction\predict_model.py", line 48, in batch_predict_from_model
+    self.X = self.preProcess.preprocess_predictset()
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 382, in preprocess_predictset
+    raise Exception
+Exception

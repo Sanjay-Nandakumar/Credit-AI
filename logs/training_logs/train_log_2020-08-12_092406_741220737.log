@@ -1,0 +1,222 @@
+2020-08-12 09:24:06,306 : INFO : Start of Training
+2020-08-12 09:24:06,306 : INFO : Run_id:2020-08-12_092406_741220737
+2020-08-12 09:24:06,306 : INFO : Start of Data Load, validation and transformation
+2020-08-12 09:24:06,306 : INFO : Start of Archiving Old Rejected Files...
+2020-08-12 09:24:06,306 : INFO : End of Archiving Old Rejected Files...
+2020-08-12 09:24:06,306 : INFO : Start of Archiving Old Validated Files...
+2020-08-12 09:24:06,311 : INFO : End of Archiving Old Validated Files...
+2020-08-12 09:24:06,311 : INFO : Start of Archiving Old Processed Files...
+2020-08-12 09:24:06,311 : INFO : End of Archiving Old Processed Files...
+2020-08-12 09:24:06,311 : INFO : Start of Archiving Old Result Files...
+2020-08-12 09:24:06,884 : INFO : End of Archiving Old Result Files...
+2020-08-12 09:24:06,885 : INFO : Start of Reading values From Schema...
+2020-08-12 09:24:06,887 : INFO : End of Reading values From Schema...
+2020-08-12 09:24:06,887 : INFO : Start of Validating Column Length...
+2020-08-12 09:24:06,888 : INFO : End of Validating Column Length...
+2020-08-12 09:24:06,889 : INFO : Start of Validating Missing Values...
+2020-08-12 09:24:06,889 : INFO : End of Validating Missing Values...
+2020-08-12 09:24:06,889 : INFO : Start of Replacing Missing Values with NULL...
+2020-08-12 09:24:06,890 : INFO : End of Replacing Missing Values with NULL...
+2020-08-12 09:24:06,890 : INFO : Start of Creating Table...
+2020-08-12 09:24:06,894 : INFO : Opened training database successfully
+2020-08-12 09:24:06,896 : INFO : Tables created successfully
+2020-08-12 09:24:06,897 : INFO : Closed training database successfully
+2020-08-12 09:24:06,897 : INFO : End of Creating Table...
+2020-08-12 09:24:06,899 : INFO : Opened training database successfully
+2020-08-12 09:24:06,900 : INFO : Start of Inserting Data into Table...
+2020-08-12 09:24:06,901 : INFO : End of Inserting Data into Table...
+2020-08-12 09:24:06,902 : INFO : Start of Exporting Data into CSV...
+2020-08-12 09:24:06,903 : INFO : Opened training database successfully
+2020-08-12 09:24:06,953 : INFO : End of Exporting Data into CSV...
+2020-08-12 09:24:06,988 : INFO : Start of Moving Processed Files...
+2020-08-12 09:24:06,989 : INFO : End of Moving Processed Files...
+2020-08-12 09:24:06,989 : INFO : End of Data Load, validation and transformation
+2020-08-12 09:24:06,991 : INFO : Start of Preprocessing...
+2020-08-12 09:24:06,994 : INFO : Start of reading dataset...
+2020-08-12 09:24:07,057 : INFO : End of reading dataset...
+2020-08-12 09:24:07,057 : INFO : Start of Droping Columns...
+2020-08-12 09:24:07,062 : INFO : End of Droping Columns...
+2020-08-12 09:24:07,063 : INFO : Start of replacing invalid values...
+2020-08-12 09:24:07,119 : INFO : end of replacing invalid values...
+2020-08-12 09:24:07,119 : INFO : Start of encode Categorical Values ...
+2020-08-12 09:24:07,130 : INFO : end of encode Categorical Values...
+2020-08-12 09:24:07,130 : INFO : Start of feature encoding...
+2020-08-12 09:24:07,144 : INFO : End of feature encoding...
+2020-08-12 09:24:07,147 : INFO : Start of Droping Columns...
+2020-08-12 09:24:07,148 : INFO : End of Droping Columns...
+2020-08-12 09:24:07,148 : INFO : Start of finding missing values...
+2020-08-12 09:24:07,173 : INFO : End of finding missing values...
+2020-08-12 09:24:07,173 : INFO : Start of imputing missing values...
+2020-08-12 09:24:07,182 : INFO : End of imputing missing values...
+2020-08-12 09:24:07,182 : INFO : Start of splitting features and label ...
+2020-08-12 09:24:07,183 : INFO : End of splitting features and label ...
+2020-08-12 09:24:07,183 : INFO : End of Preprocessing...
+2020-08-12 09:24:07,183 : INFO : Start of elbow plotting...
+2020-08-12 09:24:08,889 : INFO : The optimum number of clusters is: 3
+2020-08-12 09:24:08,890 : INFO : End of elbow plotting...
+2020-08-12 09:24:08,890 : INFO : Start of Create clusters...
+2020-08-12 09:24:09,038 : INFO : Start of Save Models
+2020-08-12 09:24:09,038 : INFO : Start of Save Models
+2020-08-12 09:24:09,052 : INFO : Model File KMeans saved
+2020-08-12 09:24:09,052 : INFO : Model File KMeans saved
+2020-08-12 09:24:09,053 : INFO : End of Save Models
+2020-08-12 09:24:09,053 : INFO : End of Save Models
+2020-08-12 09:24:09,056 : INFO : succesfully created 3clusters.
+2020-08-12 09:24:09,056 : INFO : End of Create clusters...
+2020-08-12 09:24:09,073 : INFO : Start of finding best model...
+2020-08-12 09:24:09,073 : INFO : Start of finding best params for KNN algo...
+2020-08-12 09:24:20,759 : INFO : Knn Forest best params: {'algorithm': 'ball_tree', 'leaf_size': 10, 'n_neighbors': 8, 'p': 1}
+2020-08-12 09:24:20,759 : INFO : End of finding best params for knn algo...
+2020-08-12 09:24:20,890 : INFO : AUC for knn:0.6717679794520548
+2020-08-12 09:24:20,891 : INFO : Start of finding best params for randomforest algo...
+2020-08-12 09:24:42,381 : INFO : Random Forest best params: {'criterion': 'entropy', 'max_depth': 3, 'max_features': 'auto', 'n_estimators': 100}
+2020-08-12 09:24:42,381 : INFO : End of finding best params for randomforest algo...
+2020-08-12 09:24:42,393 : INFO : AUC for Random Forest:0.8710402397260274
+2020-08-12 09:24:42,393 : INFO : End of finding best model...
+2020-08-12 09:24:42,393 : INFO : Start of Save Models
+2020-08-12 09:24:42,393 : INFO : Start of Save Models
+2020-08-12 09:24:42,398 : INFO : Model File RandomForest0 saved
+2020-08-12 09:24:42,398 : INFO : Model File RandomForest0 saved
+2020-08-12 09:24:42,398 : INFO : End of Save Models
+2020-08-12 09:24:42,398 : INFO : End of Save Models
+2020-08-12 09:24:42,401 : INFO : Start of finding best model...
+2020-08-12 09:24:42,401 : INFO : Start of finding best params for KNN algo...
+2020-08-12 09:24:42,407 : ERROR : Exception raised while finding best params for knn algo:Expected n_neighbors <= n_samples,  but n_samples = 1, n_neighbors = 4
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 106, in get_best_params_for_KNN
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 710, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 1151, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 689, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in __call__
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 544, in _fit_and_score
+    test_scores = _score(estimator, X_test, y_test, scorer)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 591, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 89, in __call__
+    score = scorer(estimator, *args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 371, in _passthrough_scorer
+    return estimator.score(*args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\base.py", line 369, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\neighbors\_classification.py", line 173, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\neighbors\_base.py", line 617, in kneighbors
+    (n_samples_fit, n_neighbors)
+ValueError: Expected n_neighbors <= n_samples,  but n_samples = 1, n_neighbors = 4
+2020-08-12 09:24:42,409 : ERROR : Exception raised while finding best model:
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 106, in get_best_params_for_KNN
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 710, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 1151, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 689, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in __call__
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 544, in _fit_and_score
+    test_scores = _score(estimator, X_test, y_test, scorer)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 591, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 89, in __call__
+    score = scorer(estimator, *args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 371, in _passthrough_scorer
+    return estimator.score(*args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\base.py", line 369, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\neighbors\_classification.py", line 173, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\neighbors\_base.py", line 617, in kneighbors
+    (n_samples_fit, n_neighbors)
+ValueError: Expected n_neighbors <= n_samples,  but n_samples = 1, n_neighbors = 4
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 183, in get_best_model
+    self.prediction_knn = self.knn.predict(test_x)  # Predictions using the Knn Model
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 125, in get_best_params_for_KNN
+Exception
+2020-08-12 09:24:42,410 : ERROR : Unsuccessful End of Training
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 106, in get_best_params_for_KNN
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 710, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 1151, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 689, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in __call__
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 544, in _fit_and_score
+    test_scores = _score(estimator, X_test, y_test, scorer)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 591, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 89, in __call__
+    score = scorer(estimator, *args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 371, in _passthrough_scorer
+    return estimator.score(*args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\base.py", line 369, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\neighbors\_classification.py", line 173, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\neighbors\_base.py", line 617, in kneighbors
+    (n_samples_fit, n_neighbors)
+ValueError: Expected n_neighbors <= n_samples,  but n_samples = 1, n_neighbors = 4
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 183, in get_best_model
+    self.prediction_knn = self.knn.predict(test_x)  # Predictions using the Knn Model
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 125, in get_best_params_for_KNN
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\training\train_model.py", line 78, in training_model
+    best_model_name, best_model = self.modelTuner.get_best_model(x_train, y_train, x_test, y_test)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 215, in get_best_model
+    raise Exception()
+Exception

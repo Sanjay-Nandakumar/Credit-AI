@@ -1,0 +1,111 @@
+2020-08-13 09:19:21,872 : INFO : Start of Training
+2020-08-13 09:19:21,872 : INFO : Run_id:2020-08-13_091921_726113983
+2020-08-13 09:19:21,872 : INFO : Start of Data Load, validation and transformation
+2020-08-13 09:19:21,872 : INFO : Start of Archiving Old Rejected Files...
+2020-08-13 09:19:21,872 : INFO : End of Archiving Old Rejected Files...
+2020-08-13 09:19:21,873 : INFO : Start of Archiving Old Validated Files...
+2020-08-13 09:19:21,885 : INFO : End of Archiving Old Validated Files...
+2020-08-13 09:19:21,885 : INFO : Start of Archiving Old Processed Files...
+2020-08-13 09:19:21,889 : INFO : End of Archiving Old Processed Files...
+2020-08-13 09:19:21,889 : INFO : Start of Archiving Old Result Files...
+2020-08-13 09:19:21,890 : INFO : End of Archiving Old Result Files...
+2020-08-13 09:19:21,890 : INFO : Start of Reading values From Schema...
+2020-08-13 09:19:21,904 : INFO : End of Reading values From Schema...
+2020-08-13 09:19:21,904 : INFO : Start of Validating Column Length...
+2020-08-13 09:19:22,106 : INFO : End of Validating Column Length...
+2020-08-13 09:19:22,107 : INFO : Start of Validating Missing Values...
+2020-08-13 09:19:22,181 : INFO : End of Validating Missing Values...
+2020-08-13 09:19:22,181 : INFO : Start of Replacing Missing Values with NULL...
+2020-08-13 09:19:23,004 : INFO : Credit_Approval_rename_data.csv: File Transformed successfully!!
+2020-08-13 09:19:23,004 : INFO : End of Replacing Missing Values with NULL...
+2020-08-13 09:19:23,004 : INFO : Start of Creating Table...
+2020-08-13 09:19:23,011 : INFO : Opened training database successfully
+2020-08-13 09:19:23,335 : INFO : CREATE TABLE training_raw_data_t column_name
+2020-08-13 09:19:23,648 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:23,814 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:23,948 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:24,098 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:24,247 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:24,573 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:24,690 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:24,820 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:24,960 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,088 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,244 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,366 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,522 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,660 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,820 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-13 09:19:25,821 : INFO : End of Creating Table...
+2020-08-13 09:19:25,822 : INFO : Opened training database successfully
+2020-08-13 09:19:25,823 : INFO : Start of Inserting Data into Table...
+2020-08-13 09:21:01,302 : INFO : End of Inserting Data into Table...
+2020-08-13 09:21:01,303 : INFO : Start of Exporting Data into CSV...
+2020-08-13 09:21:01,304 : INFO : Opened training database successfully
+2020-08-13 09:21:01,318 : INFO : End of Exporting Data into CSV...
+2020-08-13 09:21:01,319 : INFO : Start of Moving Processed Files...
+2020-08-13 09:21:01,320 : INFO : Moved the already processed file Credit_Approval_rename_data.csv
+2020-08-13 09:21:01,321 : INFO : End of Moving Processed Files...
+2020-08-13 09:21:01,321 : INFO : End of Data Load, validation and transformation
+2020-08-13 09:21:01,321 : INFO : Start of Preprocessing...
+2020-08-13 09:21:01,321 : INFO : Start of reading dataset...
+2020-08-13 09:21:01,328 : INFO : End of reading dataset...
+2020-08-13 09:21:01,328 : INFO : Start of Droping Columns...
+2020-08-13 09:21:01,374 : INFO : End of Droping Columns...
+2020-08-13 09:21:01,374 : INFO : Start of replacing invalid values...
+2020-08-13 09:21:01,464 : INFO : end of replacing invalid values...
+2020-08-13 09:21:01,465 : INFO : Start of encode Categorical Values ...
+2020-08-13 09:21:01,466 : ERROR : Exception raised while splitting features and label:No numeric types to aggregate
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 201, in encodeCategoricalValues
+    EducationLevel_encoding = data.groupby(['EducationLevel'])['Approved'].mean().to_dict()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\groupby\groupby.py", line 1205, in mean
+    "mean", alt=lambda x, axis: Series(x).mean(**kwargs), **kwargs
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\groupby\groupby.py", line 888, in _cython_agg_general
+    raise DataError("No numeric types to aggregate")
+pandas.core.base.DataError: No numeric types to aggregate
+2020-08-13 09:21:01,485 : ERROR : Unsuccessful End of Preprocessing...
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 201, in encodeCategoricalValues
+    EducationLevel_encoding = data.groupby(['EducationLevel'])['Approved'].mean().to_dict()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\groupby\groupby.py", line 1205, in mean
+    "mean", alt=lambda x, axis: Series(x).mean(**kwargs), **kwargs
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\groupby\groupby.py", line 888, in _cython_agg_general
+    raise DataError("No numeric types to aggregate")
+pandas.core.base.DataError: No numeric types to aggregate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 327, in preprocess_trainset
+    data = self.encodeCategoricalValues(data)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 218, in encodeCategoricalValues
+    raise Exception()
+Exception
+2020-08-13 09:21:01,486 : ERROR : Unsuccessful End of Training
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 201, in encodeCategoricalValues
+    EducationLevel_encoding = data.groupby(['EducationLevel'])['Approved'].mean().to_dict()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\groupby\groupby.py", line 1205, in mean
+    "mean", alt=lambda x, axis: Series(x).mean(**kwargs), **kwargs
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\pandas\core\groupby\groupby.py", line 888, in _cython_agg_general
+    raise DataError("No numeric types to aggregate")
+pandas.core.base.DataError: No numeric types to aggregate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 327, in preprocess_trainset
+    data = self.encodeCategoricalValues(data)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 218, in encodeCategoricalValues
+    raise Exception()
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\training\train_model.py", line 54, in training_model
+    self.X, self.y = self.preProcess.preprocess_trainset()
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\preprocess\preprocessor.py", line 347, in preprocess_trainset
+    raise Exception
+Exception

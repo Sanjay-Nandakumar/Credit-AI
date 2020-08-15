@@ -1,0 +1,226 @@
+2020-08-12 12:23:53,866 : INFO : Start of Training
+2020-08-12 12:23:53,867 : INFO : Run_id:2020-08-12_122353_994506985
+2020-08-12 12:23:53,867 : INFO : Start of Data Load, validation and transformation
+2020-08-12 12:23:53,867 : INFO : Start of Archiving Old Rejected Files...
+2020-08-12 12:23:53,867 : INFO : End of Archiving Old Rejected Files...
+2020-08-12 12:23:53,867 : INFO : Start of Archiving Old Validated Files...
+2020-08-12 12:23:53,867 : INFO : End of Archiving Old Validated Files...
+2020-08-12 12:23:53,867 : INFO : Start of Archiving Old Processed Files...
+2020-08-12 12:23:53,869 : INFO : End of Archiving Old Processed Files...
+2020-08-12 12:23:53,869 : INFO : Start of Archiving Old Result Files...
+2020-08-12 12:23:53,870 : INFO : End of Archiving Old Result Files...
+2020-08-12 12:23:53,870 : INFO : Start of Reading values From Schema...
+2020-08-12 12:23:53,870 : INFO : End of Reading values From Schema...
+2020-08-12 12:23:53,870 : INFO : Start of Validating Column Length...
+2020-08-12 12:23:53,881 : INFO : End of Validating Column Length...
+2020-08-12 12:23:53,881 : INFO : Start of Validating Missing Values...
+2020-08-12 12:23:53,891 : INFO : End of Validating Missing Values...
+2020-08-12 12:23:53,892 : INFO : Start of Replacing Missing Values with NULL...
+2020-08-12 12:23:54,083 : INFO : Credit_Approval_rename_data.csv: File Transformed successfully!!
+2020-08-12 12:23:54,083 : INFO : End of Replacing Missing Values with NULL...
+2020-08-12 12:23:54,084 : INFO : Start of Creating Table...
+2020-08-12 12:23:54,086 : INFO : Opened training database successfully
+2020-08-12 12:23:54,239 : INFO : CREATE TABLE training_raw_data_t column_name
+2020-08-12 12:23:54,344 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:54,462 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:54,576 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:54,747 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:54,831 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:54,913 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,023 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,185 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,355 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,509 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,615 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,720 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,825 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:55,931 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:56,037 : INFO : ALTER TABLE training_raw_data_t ADD COLUMN
+2020-08-12 12:23:56,038 : INFO : End of Creating Table...
+2020-08-12 12:23:56,042 : INFO : Opened training database successfully
+2020-08-12 12:23:56,043 : INFO : Start of Inserting Data into Table...
+2020-08-12 12:25:22,587 : INFO : End of Inserting Data into Table...
+2020-08-12 12:25:22,588 : INFO : Start of Exporting Data into CSV...
+2020-08-12 12:25:22,591 : INFO : Opened training database successfully
+2020-08-12 12:25:22,627 : INFO : End of Exporting Data into CSV...
+2020-08-12 12:25:22,629 : INFO : Start of Moving Processed Files...
+2020-08-12 12:25:22,636 : INFO : Moved the already processed file Credit_Approval_rename_data.csv
+2020-08-12 12:25:22,637 : INFO : End of Moving Processed Files...
+2020-08-12 12:25:22,637 : INFO : End of Data Load, validation and transformation
+2020-08-12 12:25:22,638 : INFO : Start of Preprocessing...
+2020-08-12 12:25:22,638 : INFO : Start of reading dataset...
+2020-08-12 12:25:22,659 : INFO : End of reading dataset...
+2020-08-12 12:25:22,659 : INFO : Start of Droping Columns...
+2020-08-12 12:25:22,662 : INFO : End of Droping Columns...
+2020-08-12 12:25:22,662 : INFO : Start of replacing invalid values...
+2020-08-12 12:25:22,776 : INFO : end of replacing invalid values...
+2020-08-12 12:25:22,777 : INFO : Start of encode Categorical Values ...
+2020-08-12 12:25:22,804 : INFO : end of encode Categorical Values...
+2020-08-12 12:25:22,805 : INFO : Start of feature encoding...
+2020-08-12 12:25:22,840 : INFO : End of feature encoding...
+2020-08-12 12:25:22,845 : INFO : Start of Droping Columns...
+2020-08-12 12:25:22,849 : INFO : End of Droping Columns...
+2020-08-12 12:25:22,850 : INFO : Start of finding missing values...
+2020-08-12 12:25:22,862 : INFO : End of finding missing values...
+2020-08-12 12:25:22,862 : INFO : Start of imputing missing values...
+2020-08-12 12:25:22,873 : INFO : End of imputing missing values...
+2020-08-12 12:25:22,873 : INFO : Start of splitting features and label ...
+2020-08-12 12:25:22,874 : INFO : End of splitting features and label ...
+2020-08-12 12:25:22,874 : INFO : End of Preprocessing...
+2020-08-12 12:25:22,875 : INFO : Start of elbow plotting...
+2020-08-12 12:25:24,506 : INFO : The optimum number of clusters is: 3
+2020-08-12 12:25:24,506 : INFO : End of elbow plotting...
+2020-08-12 12:25:24,506 : INFO : Start of Create clusters...
+2020-08-12 12:25:24,540 : INFO : Start of Save Models
+2020-08-12 12:25:24,540 : INFO : Start of Save Models
+2020-08-12 12:25:24,541 : INFO : Model File KMeans saved
+2020-08-12 12:25:24,541 : INFO : Model File KMeans saved
+2020-08-12 12:25:24,541 : INFO : End of Save Models
+2020-08-12 12:25:24,541 : INFO : End of Save Models
+2020-08-12 12:25:24,542 : INFO : succesfully created 3clusters.
+2020-08-12 12:25:24,542 : INFO : End of Create clusters...
+2020-08-12 12:25:24,546 : INFO : Start of finding best params for XGBoost algo...
+2020-08-12 12:25:27,269 : ERROR : Exception raised while finding best params for XGBoost algo:exception: access violation writing 0x0000000000000000
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 155, in best_params_xgboost
+    self.grid.fit(train_x, train_y)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 710, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 1151, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 689, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in __call__
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 544, in _fit_and_score
+    test_scores = _score(estimator, X_test, y_test, scorer)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 591, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 89, in __call__
+    score = scorer(estimator, *args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 371, in _passthrough_scorer
+    return estimator.score(*args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\base.py", line 369, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\xgboost\sklearn.py", line 887, in predict
+    validate_features=validate_features)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\xgboost\core.py", line 1452, in predict
+    ctypes.byref(preds)))
+OSError: exception: access violation writing 0x0000000000000000
+2020-08-12 12:25:27,979 : ERROR : Exception raised while finding best model:
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 155, in best_params_xgboost
+    self.grid.fit(train_x, train_y)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 710, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 1151, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 689, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in __call__
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 544, in _fit_and_score
+    test_scores = _score(estimator, X_test, y_test, scorer)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 591, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 89, in __call__
+    score = scorer(estimator, *args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 371, in _passthrough_scorer
+    return estimator.score(*args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\base.py", line 369, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\xgboost\sklearn.py", line 887, in predict
+    validate_features=validate_features)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\xgboost\core.py", line 1452, in predict
+    ctypes.byref(preds)))
+OSError: exception: access violation writing 0x0000000000000000
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 200, in get_best_model
+    self.xgb = self.best_params_xgboost(train_x, train_y)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 172, in best_params_xgboost
+    raise Exception()
+Exception
+2020-08-12 12:25:27,984 : ERROR : Unsuccessful End of Training
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 155, in best_params_xgboost
+    self.grid.fit(train_x, train_y)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 710, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 1151, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_search.py", line 689, in evaluate_candidates
+    cv.split(X, y, groups)))
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in __call__
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\anaconda3\envs\Credit_Approval\lib\site-packages\joblib\parallel.py", line 253, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 544, in _fit_and_score
+    test_scores = _score(estimator, X_test, y_test, scorer)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\model_selection\_validation.py", line 591, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 89, in __call__
+    score = scorer(estimator, *args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\metrics\_scorer.py", line 371, in _passthrough_scorer
+    return estimator.score(*args, **kwargs)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\sklearn\base.py", line 369, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\xgboost\sklearn.py", line 887, in predict
+    validate_features=validate_features)
+  File "C:\Users\sreeh\AppData\Roaming\Python\Python36\site-packages\xgboost\core.py", line 1452, in predict
+    ctypes.byref(preds)))
+OSError: exception: access violation writing 0x0000000000000000
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 200, in get_best_model
+    self.xgb = self.best_params_xgboost(train_x, train_y)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 172, in best_params_xgboost
+    raise Exception()
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\training\train_model.py", line 78, in training_model
+    best_model_name, best_model = self.modelTuner.get_best_model(x_train, y_train, x_test, y_test)
+  File "C:\Users\sreeh\Desktop\group project\actual project\apps\tuning\model_tuner.py", line 234, in get_best_model
+    raise Exception()
+Exception
