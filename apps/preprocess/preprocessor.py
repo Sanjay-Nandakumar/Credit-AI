@@ -50,8 +50,8 @@ class Preprocessor:
 
     def save_encoded_data(self):
         """
-            * method: get_data
-            * description: method to save datafile
+            * method: save_encoded_data
+            * description: method to save encoded data
             * return: A pandas DataFrame
             *
             *

@@ -3,6 +3,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+
         <title>Credit Card Approval</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
@@ -18,19 +19,33 @@
             <div class='description'>
     			<p>Machine Learning App</p>
     		</div>
-    	</div>
+    	</div><br><br>
 
         <!-- Text Area -->
-    	<div class="ml-container">
+        <!-- class="ml-container"-->
+    	<div >
     		<form action="/predict" method="POST">
-                 <input class="form-input" type="text" name="prior_default" placeholder="Prior Default eg.0/1 "><br><br>
-                <input class="form-input" type="text" name="years_employed" placeholder="Years Employed (years) eg.14 "><br><br>
-                <input class="form-input" type="text" name="credit_score" placeholder="Credit Score (range) eg.1-12 "><br><br>
-                <input class="form-input" type="text" name="income" placeholder="Income (Rs) eg.7,800"><br><br>
+                 <input class="form-input" type="text" name="prior_default" placeholder="Prior Default eg.0/1 "><br>
+                <input class="form-input" type="text" name="years_employed" placeholder="Years Employed (years) eg.14 "><br>
+                <input class="form-input" type="text" name="credit_score" placeholder="Credit Score (range) eg.1-12 "><br>
+                <input class="form-input" type="text" name="income" placeholder="Income (Rs) eg.7,800"><br>
 
-        		<input type="submit" class="my-cta-button" value="Predict">
+        		<input type="submit" class="my-cta-button" value="Predict"><br><br>
+
         	</form>
     	</div>
+
+        <span >
+            <form action="/batchprediction" method="POST">
+            <input type="submit" class="my-cta-button" value="Bulk Predict"><br><br>
+            </form>
+        </span>
+
+         <span >
+             <form action="/training" method="POST">
+            <input type="submit" class="my-cta-button" value="Retrain"><br><br><br>
+             </form>
+        </span>
 
         <!-- Footer -->
        <div class='footer'>
@@ -39,6 +54,10 @@
            </div>
            <p class='footer-description'>Made with ❤ </p>
        </div>
-
+        <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+-->
     </body>
 </html>

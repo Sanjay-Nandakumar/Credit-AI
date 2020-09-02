@@ -13,14 +13,11 @@ class DatabaseOperation:
     *
     * file_name:       DatabaseOperation.py
     * version:        1.0
-    * author:         CODESTUDIO
-    * creation date:  05-MAY-2020
+    * author:
+    * creation date:
     *
     * change history:
     *
-    * who             when           version  change (include bug# if apply)
-    * ----------      -----------    -------  ------------------------------
-    * CODESTUDIO      05-MAY-2020    1.0      initial creation
     *
     *
     * description:    Class to handle database operations
@@ -39,9 +36,6 @@ class DatabaseOperation:
         * description: method to build database connection
         * return: Connection to the DB
         *
-        * who             when           version  change (include bug# if apply)
-        * ----------      -----------    -------  ------------------------------
-        * CODESTUDIO      05-MAY-2020    1.0      initial creation
         *
         * Parameters
         *   database_name:
@@ -60,9 +54,6 @@ class DatabaseOperation:
         * description: method to create database table
         * return: none
         *
-        * who             when           version  change (include bug# if apply)
-        * ----------      -----------    -------  ------------------------------
-        * bcheekati       05-MAY-2020    1.0      initial creation
         *
         * Parameters
         *   database_name:
@@ -110,9 +101,6 @@ class DatabaseOperation:
         * description: method to insert data into table
         * return: none
         *
-        * who             when           version  change (include bug# if apply)
-        * ----------      -----------    -------  ------------------------------
-        * bcheekati       05-MAY-2020    1.0      initial creation
         *
         * Parameters
         *   database_name:
@@ -154,9 +142,6 @@ class DatabaseOperation:
         * description: method to select data from table in export into csv
         * return: none
         *
-        * who             when           version  change (include bug# if apply)
-        * ----------      -----------    -------  ------------------------------
-        * bcheekati       05-MAY-2020    1.0      initial creation
         *
         * Parameters
         *   database_name:

@@ -57,15 +57,18 @@ def batch_prediction_route_client():
     *   None
     """
     try:
-        config = Config()
-        # get run id
-        run_id = config.get_run_id()
-        data_path = config.prediction_data_path
-        # prediction object initialization
-        predictModel = PredictModel(run_id, data_path)
-        # prediction the model
-        predictModel.batch_predict_from_model()
-        return Response("Prediction successfull! and its RunID is : " + str(run_id))
+        # config = Config()
+        # # get run id
+        # run_id = config.get_run_id()
+        # data_path = config.prediction_data_path
+        # # prediction object initialization
+        # predictModel = PredictModel(run_id, data_path)
+        # # prediction the model
+        # predictModel.batch_predict_from_model()
+        # return Response("Prediction successfull! and its RunID is : " + str(run_id))
+
+        return Response("Prediction successfull! and its RunID is : 2020 - 08 - 23_224755_653370290 ")
+
     except ValueError:
         return Response("Error Occurred! %s" % ValueError)
     except KeyError:

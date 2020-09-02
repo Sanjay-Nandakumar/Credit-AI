@@ -5,7 +5,7 @@ from apps.core.logger import Logger
 from apps.ingestion.load_validate import LoadValidate
 from apps.preprocess.preprocessor import Preprocessor
 from apps.core.file_operation import FileOperation
-from apps.models import RandomForest
+
 
 class PredictModel:
     """

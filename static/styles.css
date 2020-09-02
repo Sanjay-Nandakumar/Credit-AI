@@ -16,10 +16,10 @@ body{
 
 /* Website Title */
 .container{
-    padding: 30px;
+    padding: 20px;
 	position: relative;
 	background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
-	background-size: 500% 500%;
+	background-size: 300% 300%;
 	animation: change-gradient 10s ease-in-out infinite;
 }
 @keyframes change-gradient {
@@ -136,3 +136,16 @@ body{
 	width: 35%;
     	margin: 10px 0;
 }
+/*
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+*/
