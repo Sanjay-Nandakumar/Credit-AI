@@ -16,17 +16,17 @@ Apart from training files, we also require a "schema" file from the client, whic
 # Data Validation 
 In this step, we perform different sets of validation on the given set of training files.  
 
-1.Number of Columns - We validate the number of columns present in the files, and if it doesn't match with the value given in the schema file, then the file is moved to "Rejected folder" else moved to “Validate folder”
+1. Number of Columns - We validate the number of columns present in the files, and if it doesn't match with the value given in the schema file, then the file is moved to "Rejected folder" else moved to “Validate folder”
 
       a) For training: training_data_reject,training_data_validate
 
       b) For predicting: predicting_data_reject,predicting_data_validate
 
-2.Name of Columns - The name of the columns is validated and should be the same as given in the schema file. If not, then the file is moved to "Rejected folder".
+2. Name of Columns - The name of the columns is validated and should be the same as given in the schema file. If not, then the file is moved to "Rejected folder".
 
-3.The datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If the datatype is wrong, then the file is moved to "Rejected folder".
+3. The datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If the datatype is wrong, then the file is moved to "Rejected folder".
 
-4.Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Rejected folder".
+4. Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Rejected folder".
 
 
 
