@@ -1,6 +1,6 @@
 # Credit-AI
 
-**The goal here is to build an end to end automated Machine Learning solution where a user will be able to predict whether a bank customer should be approved for attaining the credit card or not. The user is only need to give the value of feature variables and the model will able to predict the binary outcome (Approve/ Not Approve). The model will be able take care of all intermediate functionalities like cross validation, hyper parameter tuning, algorithm selection etc.**
+**The goal here is to build an end to end automated Machine Learning solution where a user will be able to predict whether a bank customer should be approved for attaining the credit card or not. The user only needs to give the value of feature variables and the model will able to predict the binary outcome (Approve/ Not Approve). The model will be able to take care of all intermediate functionalities like cross-validation, hyperparameter tuning, algorithm selection, etc**
 
 # Data set
 
